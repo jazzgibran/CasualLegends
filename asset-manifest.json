@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CasualLegends/static/css/main.fa3d05e1.css",
-    "main.js": "/CasualLegends/static/js/main.ae69be43.js",
+    "main.js": "/CasualLegends/static/js/main.fc8513a3.js",
     "static/js/453.8ab44547.chunk.js": "/CasualLegends/static/js/453.8ab44547.chunk.js",
     "static/media/partybg.png": "/CasualLegends/static/media/partybg.ae2b72f11ad3a7d2ac40.png",
     "static/media/background.png": "/CasualLegends/static/media/background.ef4daa1d17069bda824e.png",
@@ -9,11 +9,11 @@
     "static/media/discord.png": "/CasualLegends/static/media/discord.d44e03faa581356265ef.png",
     "index.html": "/CasualLegends/index.html",
     "main.fa3d05e1.css.map": "/CasualLegends/static/css/main.fa3d05e1.css.map",
-    "main.ae69be43.js.map": "/CasualLegends/static/js/main.ae69be43.js.map",
+    "main.fc8513a3.js.map": "/CasualLegends/static/js/main.fc8513a3.js.map",
     "453.8ab44547.chunk.js.map": "/CasualLegends/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa3d05e1.css",
-    "static/js/main.ae69be43.js"
+    "static/js/main.fc8513a3.js"
   ]
 }
