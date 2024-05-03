@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import icon from '../assets/logo512.png'
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -17,9 +18,11 @@ const Navbar = () => {
       id='navbar'
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
-        <Link to="/CasualLegends" className="text-MountainMeadow  text-2xl font-bold">Casual Legends</Link>
+        <Link to="/CasualLegends" className=" flex items-center gap-x-3 text-2xl font-bold">
+          <img src={icon} className='w-12'></img> Casual Legends
+        </Link>
         <div className="md:hidden">
-          <button onClick={toggleBurger} className="text-MountainMeadow  focus:outline-none">
+          <button onClick={toggleBurger} className="  focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
@@ -38,9 +41,9 @@ const Navbar = () => {
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
           exit={{opacity: 0}}
-            className="fixed top-0 right-0 bottom-0 bg-slate-900 w-64 py-6 px-4"
+            className="fixed top-0 right-0 bottom-0 bg-GreenMist w-64 py-6 px-4"
           >
-            <button onClick={toggleBurger} className="text-MountainMeadow  focus:outline-none">
+            <button onClick={toggleBurger} className="  focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
@@ -67,7 +70,7 @@ const NavItem = ({ to, text, onClick }) => {
     <Link to={to}>
     <motion.li
     onClick={onClick}
-    className="text-MountainMeadow hover:text-slate-800 hover:bg-Putty hover:bg-opacity-50 hover:shadow-lg rounded-lg p-2 px-5 transition-all duration-300 cursor-pointer"
+    className=" hover:text-slate-800 hover:bg-Putty hover:bg-opacity-50 hover:shadow-lg rounded-lg p-2 px-5 transition-all duration-300 cursor-pointer"
     >
       {text}
     </motion.li></Link>
@@ -88,12 +91,12 @@ const DropdownMenu = () => {
   return (
     <div className="relative" onMouseEnter={toggleMenu} onMouseLeave={closeMenu}>
       <motion.li
-        className="text-MountainMeadow  hover:text-slate-800 hover:bg-Putty hover:bg-opacity-50 rounded-lg p-2 px-5 transition-all duration-300 cursor-pointer"
+        className=" hover:text-slate-800 hover:bg-Putty hover:bg-opacity-50 rounded-lg p-2 px-5 transition-all duration-300 cursor-pointer"
       >
         Guides
       </motion.li>
       {isOpen && (
-        <ul className="absolute right-0 w-[400px] bg-textured2 text-MountainMeadow  rounded-md shadow-lg  border-gray-400 border" onMouseEnter={toggleMenu} >
+        <ul className="absolute right-0 w-[400px] bg-textured2  rounded-md shadow-lg  border-gray-400 border" onMouseEnter={toggleMenu} >
           <DropdownItem to="/CasualLegends/gameplay" text="Gameplay" description="Overview of how the game works." />
           <DropdownItem to="/CasualLegends/character" text="Character Creation" description="Guides on creating a character." />
         </ul>
