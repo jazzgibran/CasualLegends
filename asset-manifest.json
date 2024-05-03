@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/CasualLegends/static/css/main.7f123afc.css",
-    "main.js": "/CasualLegends/static/js/main.4d4a2bf8.js",
+    "main.css": "/CasualLegends/static/css/main.962fc9ce.css",
+    "main.js": "/CasualLegends/static/js/main.5aa7a8e2.js",
     "static/js/453.8ab44547.chunk.js": "/CasualLegends/static/js/453.8ab44547.chunk.js",
-    "static/media/texturedbg.jpg": "/CasualLegends/static/media/texturedbg.bc88b0adb766f75659bf.jpg",
-    "static/media/partybg.png": "/CasualLegends/static/media/partybg.ae2b72f11ad3a7d2ac40.png",
-    "static/media/background.png": "/CasualLegends/static/media/background.ef4daa1d17069bda824e.png",
+    "static/media/partybg.png": "/CasualLegends/static/media/partybg.786d5fb0b3263a1ea97e.png",
     "static/media/texturedbg2.jpg": "/CasualLegends/static/media/texturedbg2.135d9aa2a784a8db62cc.jpg",
+    "static/media/background.png": "/CasualLegends/static/media/background.a2cd93f42536d823b393.png",
+    "static/media/texturedbg.jpg": "/CasualLegends/static/media/texturedbg.b1919200caad3d4abecc.jpg",
     "static/media/mobile.png": "/CasualLegends/static/media/mobile.6e689ffed079c0d4ee78.png",
     "static/media/discord.png": "/CasualLegends/static/media/discord.d44e03faa581356265ef.png",
     "static/media/logo512.png": "/CasualLegends/static/media/logo512.f7d91867911dc3e297b3.png",
     "index.html": "/CasualLegends/index.html",
-    "main.7f123afc.css.map": "/CasualLegends/static/css/main.7f123afc.css.map",
-    "main.4d4a2bf8.js.map": "/CasualLegends/static/js/main.4d4a2bf8.js.map",
+    "main.962fc9ce.css.map": "/CasualLegends/static/css/main.962fc9ce.css.map",
+    "main.5aa7a8e2.js.map": "/CasualLegends/static/js/main.5aa7a8e2.js.map",
     "453.8ab44547.chunk.js.map": "/CasualLegends/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f123afc.css",
-    "static/js/main.4d4a2bf8.js"
+    "static/css/main.962fc9ce.css",
+    "static/js/main.5aa7a8e2.js"
   ]
 }
