@@ -94,9 +94,9 @@ export default function App() {
                             Useful links
                         </h6>
                         <p className="mb-4">
-                            <Link to="/pricing" className="hover:text-teal-500">Pricing</Link>
+                            <Link to="/CasualLegends/pricing" className="hover:text-teal-500">Pricing</Link>
                         </p>
-                            <Link to="/news" className="hover:text-teal-500">Latest Updates</Link>
+                            <Link to="/CasualLegends/news" className="hover:text-teal-500">Latest Updates</Link>
                         <p className="mb-4">
                         </p>
                         <p className='mb-4'>

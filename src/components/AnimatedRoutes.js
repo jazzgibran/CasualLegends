@@ -22,12 +22,12 @@ function AnimatedRoutes() {
             <Navbar/>
             <AnimatePresence mode='wait'>
             <Routes location={location} key={location.pathname}>
-                <Route path="/about" element={<About />} />
-                <Route path="/pricing" element={<Pricing />} />
-                <Route path="/news" element={<News />} />
-                <Route path="/" element={<HomePage />} />
-                <Route path="/gameplay" element={<GameplayPage />} />
-                <Route path="/character" element={<CharacterCreationPage />} />
+                <Route path="/CasualLegends/about" element={<About />} />
+                <Route path="/CasualLegends/pricing" element={<Pricing />} />
+                <Route path="/CasualLegends/news" element={<News />} />
+                <Route path="/CasualLegends" element={<HomePage />} />
+                <Route path="/CasualLegends/gameplay" element={<GameplayPage />} />
+                <Route path="/CasualLegends/character" element={<CharacterCreationPage />} />
             </Routes>
             <Footer/>
         </AnimatePresence>

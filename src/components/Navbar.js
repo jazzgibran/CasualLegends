@@ -16,7 +16,7 @@ const Navbar = () => {
       className="p-4 z-20 sticky bg-slate-900 top-0 w-full "
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
-        <Link to="/" className="text-white text-2xl font-bold">Casual Legends</Link>
+        <Link to="/CasualLegends" className="text-white text-2xl font-bold">Casual Legends</Link>
         <div className="md:hidden">
           <button onClick={toggleBurger} className="text-white focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -25,9 +25,9 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`  hidden md:flex relative `}>
-          <NavItem to="/about" text="About" />
-          <NavItem to="/pricing" text="Pricing" />
-          <NavItem to="/news" text="News" />
+          <NavItem to="/CasualLegends/about" text="About" />
+          <NavItem to="/CasualLegends/pricing" text="Pricing" />
+          <NavItem to="/CasualLegends/news" text="News" />
           <DropdownMenu />
         </ul>
       </div>
@@ -47,12 +47,11 @@ const Navbar = () => {
 
             {/* add onclick here */}
             <ul className="mt-6">
-              <NavItem to="/about" text="About" onClick={toggleBurger} />
-              <NavItem to="/pricing" text="Pricing" onClick={toggleBurger} />
-              <NavItem to="/news" text="News" onClick={toggleBurger} />
-              <NavItem to="/gameplay" text="Gameplay" onClick={toggleBurger} />
-              <NavItem to="/character" text="Character Creation" onClick={toggleBurger} />
-              <NavItem to="/world-building" text="World Building" onClick={toggleBurger} />
+              <NavItem to="/CasualLegends/about" text="About" onClick={toggleBurger} />
+              <NavItem to="/CasualLegends/pricing" text="Pricing" onClick={toggleBurger} />
+              <NavItem to="/CasualLegends/news" text="News" onClick={toggleBurger} />
+              <NavItem to="/CasualLegends/gameplay" text="Gameplay" onClick={toggleBurger} />
+              <NavItem to="/CasualLegends/character" text="Character Creation" onClick={toggleBurger} />
             </ul>
 
           </motion.div>
@@ -94,8 +93,8 @@ const DropdownMenu = () => {
       </motion.li>
       {isOpen && (
         <ul className="absolute right-0 w-[400px] bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-md shadow-lg  border-gray-400 border" onMouseEnter={toggleMenu} >
-          <DropdownItem to="/gameplay" text="Gameplay" description="Overview of how the game works." />
-          <DropdownItem to="/character" text="Character Creation" description="Guides on creating a character." />
+          <DropdownItem to="/CasualLegends/gameplay" text="Gameplay" description="Overview of how the game works." />
+          <DropdownItem to="/CasualLegends/character" text="Character Creation" description="Guides on creating a character." />
         </ul>
       )}
     </div>
