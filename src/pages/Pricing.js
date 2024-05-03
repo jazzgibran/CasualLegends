@@ -8,7 +8,7 @@ const Pricing = () => {
     initial={{opacity:0}}
         animate={{opacity:1}}
         exit={{opacity:0}}
-         className="pb-14 bg-gradient-to-b from-slate-900  to-slate-950 text-white flex ">
+         className="pb-14  text-MountainMeadow flex ">
       <motion.div 
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const PricingCard = ({ title, price, features, subscribe="Subscribe", to="/subsc
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="border-teal-400 border bg-slate-800 bg-opacity-60 rounded-lg overflow-hidden shadow-lg p-6"
+      className="border-teal-400 flex flex-col justify-between border bg-GreenMist bg-opacity-70  rounded-lg overflow-hidden shadow-lg p-6"
     >
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
       <p className="text-lg mb-4">{price}</p>
@@ -73,7 +73,7 @@ const PricingCard = ({ title, price, features, subscribe="Subscribe", to="/subsc
       </ul>
       <Link
          to={to}
-        className="block text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+        className="block text-center bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition duration-300"
       >
         {subscribe}
       </Link>

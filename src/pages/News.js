@@ -54,13 +54,13 @@ const NewsPage = () => {
         animate={{opacity:1}}
         exit={{opacity:0}}
     
-    className="bg-gradient-to-b from-slate-900  to-slate-950 min-h-screen">
+    className=" min-h-screen">
       <motion.div 
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
       className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-4 text-white">Latest News</h1>
+        <h1 className="text-3xl font-bold mb-4 text-teal-700">Latest News</h1>
         <div className="grid gap-8 md:grid-cols-2 sm:grid-cols-1">
           {news.map(item => (
             <motion.div
@@ -83,12 +83,12 @@ const NewsPage = () => {
           >
             <div ref={popupRef}>
               <motion.div
-                className="bg-slate-700 bg-opacity-60 p-6 rounded-lg shadow-md relative"
+                className="bg-GreenMist bg-opacity-60 p-6 rounded-lg shadow-md relative"
               >
-                <h2 className="text-xl text-white font-semibold mb-2">{selectedNews.title}</h2>
+                <h2 className="text-xl text-white font-semibold mb-2 mt-4">{selectedNews.title}</h2>
                 <p className="text-white ">{selectedNews.content}</p>
-                <p className="text-gray-400 text-sm absolute left-2 top-2">{selectedNews.date}</p>
-                <button className="text-white absolute right-2 top-2 hover:text-gray-900 font-semibold" onClick={handleClosePopup}>Close</button>
+                <p className="text-white text-sm absolute left-2 top-2 ">{selectedNews.date}</p>
+                <button className="text-white absolute right-4 top-2 hover:text-gray-900 font-semibold" onClick={handleClosePopup}>Close</button>
               </motion.div>
             </div>
           </motion.div>

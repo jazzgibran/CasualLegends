@@ -7,7 +7,7 @@ const GameplayPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='text-white min-h-screen bg-gradient-to-b from-slate-900 to-slate-950  flex flex-col text-center'>
+            className='text-MountainMeadow min-h-screen b  flex flex-col text-center'>
             <div className="container mx-auto px-4 mt-3 py-8">
 
                 <motion.div

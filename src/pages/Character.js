@@ -81,7 +81,7 @@ const CharacterCreationPage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950 min-h-screen"
+      className="flex flex-col items-center justify-center min-h-screen"
     >
 
       {/* form */}
@@ -91,7 +91,7 @@ const CharacterCreationPage = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-75">
-          <div className="max-w-xl w-11/12 lg:w-full p-8 text-white border-teal-400 border bg-slate-800 shadow-lg rounded-lg">
+          <div className="max-w-xl w-11/12 lg:w-full p-8 text-MountainMeadow border-teal-400 border bg-textured2 shadow-lg rounded-lg">
             {/* Render different steps of the form based on currentStep */}
             {currentStep === 1 && (
               <div>
@@ -132,23 +132,23 @@ const CharacterCreationPage = () => {
       )}
 
       {/* get start here */}
-      <div className="max-w-md w-11/12 md:w-full p-6 border-teal-400 border bg-slate-800 bg-opacity-60 shadow-lg rounded-lg">
-        <h1 className="text-2xl text-white font-bold mb-4 text-center">
+      <div className="max-w-md w-11/12 md:w-full p-6 border-teal-400 border bg-GreenMist bg-opacity-60 shadow-lg rounded-lg">
+        <h1 className="text-2xl text-MountainMeadow font-bold mb-4 text-center">
           Character Creation
         </h1>
-        <p className="text-white mb-6 text-center">
+        <p className="text-MountainMeadow mb-6 text-center">
           Step-by-step guide on creating a character. Click on Get Started below.
         </p>
         <div className="flex flex-col space-y-4">
           <button
             onClick={handleStartForm}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Get Started
           </button>
           <Link
             to="/"
-            className="text-sm text-gray-400 hover:underline self-center"
+            className="text-sm text-gray-800 hover:underline self-center"
           >
             Back to Home
           </Link>
@@ -166,7 +166,7 @@ const EmptyFieldsModal = ({ handleClose }) => {
         <p className="mb-4">Please fill in all fields.</p>
         <button
           onClick={handleClose}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Close
         </button>
@@ -284,13 +284,13 @@ const Step1Form = ({ nextStep, handleClose, form, manualRace, setManualRace, man
         <div className="flex justify-end space-x-4">
           <button
             onClick={nextStep}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Next
           </button>
           <button
             onClick={handleClose}
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-gray-700 hover:bg-gray-600 text-gray-300 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Cancel
           </button>
@@ -317,7 +317,7 @@ const Step2Form = ({ prevStep, handleSubmit, form, handleChange }) => {
             onChange={handleChange}
             name="background"
             type="text"
-            className="px-3 py-2 mt-1 block w-full rounded text-slate-600 border-gray-300 shadow-sm focus:border-blue-300 focus:ring 
+            className="px-3 py-2 mt-1 block w-full rounded-lg text-slate-600  border-gray-300 shadow-sm focus:border-blue-300 focus:ring 
             focus:ring-blue-200 focus:ring-opacity-50"
             rows="10"
           />
@@ -325,13 +325,13 @@ const Step2Form = ({ prevStep, handleSubmit, form, handleChange }) => {
         <div className="flex justify-between">
           <button
             onClick={prevStep}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Previous
           </button>
           <button
             onClick={handleSubmit}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
@@ -355,13 +355,13 @@ const Step3Form = ({ prevStep, handleClose, form, manualRace, manualClass }) => 
         <div className="flex justify-between">
           <button
             onClick={prevStep}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-teal-800 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Edit
           </button>
           <button
             onClick={handleClose}
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-gray-700 hover:bg-gray-600 text-gray-300 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Done
           </button>
