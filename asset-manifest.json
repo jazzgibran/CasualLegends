@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CasualLegends/static/css/main.52d91675.css",
-    "main.js": "/CasualLegends/static/js/main.5aa7a8e2.js",
+    "main.css": "/CasualLegends/static/css/main.11bbe5e1.css",
+    "main.js": "/CasualLegends/static/js/main.d506ae39.js",
     "static/js/453.8ab44547.chunk.js": "/CasualLegends/static/js/453.8ab44547.chunk.js",
     "static/media/partybg.png": "/CasualLegends/static/media/partybg.786d5fb0b3263a1ea97e.png",
     "static/media/texturedbg2.jpg": "/CasualLegends/static/media/texturedbg2.135d9aa2a784a8db62cc.jpg",
@@ -11,12 +11,12 @@
     "static/media/discord.png": "/CasualLegends/static/media/discord.d44e03faa581356265ef.png",
     "static/media/logo512.png": "/CasualLegends/static/media/logo512.f7d91867911dc3e297b3.png",
     "index.html": "/CasualLegends/index.html",
-    "main.52d91675.css.map": "/CasualLegends/static/css/main.52d91675.css.map",
-    "main.5aa7a8e2.js.map": "/CasualLegends/static/js/main.5aa7a8e2.js.map",
+    "main.11bbe5e1.css.map": "/CasualLegends/static/css/main.11bbe5e1.css.map",
+    "main.d506ae39.js.map": "/CasualLegends/static/js/main.d506ae39.js.map",
     "453.8ab44547.chunk.js.map": "/CasualLegends/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52d91675.css",
-    "static/js/main.5aa7a8e2.js"
+    "static/css/main.11bbe5e1.css",
+    "static/js/main.d506ae39.js"
   ]
 }
