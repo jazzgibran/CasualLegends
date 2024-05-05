@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const ChatInterface = () => {
     const messages = [
@@ -16,7 +16,7 @@ const ChatInterface = () => {
 const Chat = ({ messages }) => {
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
     const [progress, setProgress] = useState(0);
-    let interval;
+    const intervalRef = useRef(null); // Ref for storing interval
 
     const handleMessageChange = (direction) => {
         if (direction === 'next') {
@@ -34,30 +34,30 @@ const Chat = ({ messages }) => {
     };
 
     useEffect(() => {
-        interval = setInterval(() => {
+        intervalRef.current = setInterval(() => {
             setProgress((prevProgress) => {
                 if (prevProgress > 100) {
                     handleMessageChange('next');
                     return 0;
                 }
-                return prevProgress + 3; // Increase progress bar width by 1% every 50ms
+                return prevProgress + 3; // Increase progress bar width by 3% every 150ms
             });
-        }, 150); // Update progress bar every 50 milliseconds
+        }, 150); // Update progress bar every 150 milliseconds
 
-        return () => clearInterval(interval); // Clean up the interval on unmount
+        return () => clearInterval(intervalRef.current); // Clean up the interval on unmount
     }, []);
 
     const { playerName, playerMsg, dmMsg } = messages[currentMessageIndex];
 
     return (
-        <div className="p-4 bg-white bg-opacity-80  rounded-lg">
+        <div className="p-4 bg-Putty bg-opacity-40 rounded-lg">
             {/* Bard Message */}
             <div className="flex flex-col items-end mb-4">
                 <div className="flex items-center mb-4">
                     <img src="" alt="Bard" className="h-8 w-8 rounded-full mr-2" />
                     <span className="text-sm font-bold">{playerName}</span>
                 </div>
-                <div className="bg-blue-100 rounded-lg p-2">
+                <div className="bg-GreenMist rounded-lg p-2">
                     <p className="text-sm">{playerMsg}</p>
                 </div>
             </div>
@@ -68,13 +68,13 @@ const Chat = ({ messages }) => {
                     <img src="" alt="Game Master" className="h-8 w-8 rounded-full mr-2" />
                     <span className="text-sm font-bold">Game master</span>
                 </div>
-                <div className="bg-gray-100 rounded-lg p-2">
+                <div className="bg-Putty rounded-lg p-2">
                     <p className="text-sm text-start">{dmMsg}</p>
                 </div>
             </div>
 
             {/* Progress Bar */}
-            <div className="w-8/12 mx-auto h-1 bg-gray-200 rounded">
+            <div className="w-8/12 mx-auto h-1 bg-white rounded">
                 <div
                     className="h-full bg-Putty rounded"
                     style={{ width: `${progress}%`, transition: 'width 0.5s ease' }}
@@ -83,7 +83,7 @@ const Chat = ({ messages }) => {
 
             {/* Buttons to change message */}
             <div className="flex justify-center items-center mt-2 space-x-1">
-                <button onClick={() => handleMessageChange('prev')} className="bg-Putty hover:bg-opacity-50 text-white font-bold px-2 py-1 rounded-full ">
+                <button onClick={() => handleMessageChange('prev')} className="bg-Putty hover:bg-opacity-50 text-center text-white font-bold px-2 py-1 rounded-full ">
                     &larr;
                 </button>
                 <div className="flex justify-center items-center space-x-1">
@@ -91,12 +91,12 @@ const Chat = ({ messages }) => {
                     <button
                         key={index}
                         onClick={() => handleJumpToMessage(index)}
-                        className={`bg-Putty hover:bg-opacity-100 text-white font-bold p-4 rounded-full ${currentMessageIndex === index ? 'bg-opacity-50' : ''}`}
+                        className={`bg-Putty text-white hover:bg-opacity-50 font-bold p-4 rounded-full ${currentMessageIndex === index ? 'bg-opacity-50' : ''} `}
                     >
                     </button>
                 ))}
             </div>
-                <button onClick={() => handleMessageChange('next')} className="bg-Putty hover:bg-opacity-50 text-white font-bold px-2 py-1 rounded-full">
+                <button onClick={() => handleMessageChange('next')} className="bg-Putty hover:bg-opacity-50 text-center text-white font-bold px-2 py-1 rounded-full">
                     &rarr;
                 </button>
             </div>
