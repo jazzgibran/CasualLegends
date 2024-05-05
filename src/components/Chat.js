@@ -75,7 +75,7 @@ const Chat = ({ messages }) => {
 
     return (
       
-            <div className="p-4 bg-Putty bg-opacity-40 rounded-lg">
+            <div {...swipeHandlers} className="p-4 bg-Putty bg-opacity-40 rounded-lg">
                 {/* Player Message */}
                 <div className="flex flex-col items-end mb-4">
                     <div className="flex items-center mb-2">
