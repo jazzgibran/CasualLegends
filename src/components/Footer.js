@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function App() {
+const Footer = () => {
     return (
         <footer className="z-50 text-center shadow-ylg bg-textured2  lg:text-left">
             <div className="flex border-b-2 justify-end border-black p-3">
@@ -192,3 +192,5 @@ export default function App() {
         </footer>
     );
 }
+
+export default Footer;

@@ -14,7 +14,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="p-4 z-20 sticky bg-textured2 bg-cover shadow-xl  border-b-2 border-Putty top-0 w-full"
+      className="p-4 z-20 sticky bg-textured2 bg-cover shadow-xl border-b-2 border-Putty top-0 w-full"
       id='navbar'
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
